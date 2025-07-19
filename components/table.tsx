@@ -212,7 +212,7 @@ const columns: ColumnDef<Item>[] = [
   },
 ]
 
-export default function TableData() {
+export default function TableRetries() {
   const id = useId()
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
@@ -313,9 +313,13 @@ export default function TableData() {
   }
 
   return (
-    <div className="space-y-4 px-4 mt-4 mx-auto max-w-6xl">
+    <>
+    <div className="flex items-center justify-between py-2">
+      <h1 className="text-6xl mb-4 font-bold mask-b-from-85%">Retries</h1>
+    </div>
+    <div className="space-y-4">
       {/* Filters */}
-      <div className="flex flex-wrap items-center max- justify-between gap-3">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           {/* Filter by name or email */}
           <div className="relative">
@@ -717,6 +721,7 @@ export default function TableData() {
         </a>
       </p>
     </div>
+    </>
   )
 }
 
