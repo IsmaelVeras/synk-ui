@@ -20,11 +20,11 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 export default function MenuTabs() {
   return (
     <Tabs defaultValue="tab-1">
-      <ScrollArea>
-        <TabsList className="text-foreground mb-3 h-auto gap-2 rounded-none border-b bg-transparent px-0 py-1">
+      <ScrollArea className="w-full bg-neutral-100 dark:bg-neutral-900/70">
+        <TabsList className="text-foreground bg-transparent h-auto gap-2 rounded-none border-b px-6 py-1">
           <TabsTrigger
             value="tab-1"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <HouseIcon
               className="-ms-0.5 me-1.5 opacity-60"
@@ -35,7 +35,7 @@ export default function MenuTabs() {
           </TabsTrigger>
           <TabsTrigger
             value="tab-2"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <PanelsTopLeftIcon
               className="-ms-0.5 me-1.5 opacity-60"
@@ -44,7 +44,7 @@ export default function MenuTabs() {
             />
             Projects
             <Badge
-              className="bg-primary/15 ms-1.5 min-w-5 px-1"
+              className="bg-red-500/15 ms-1.5 min-w-5 px-1"
               variant="secondary"
             >
               3
@@ -52,7 +52,7 @@ export default function MenuTabs() {
           </TabsTrigger>
           <TabsTrigger
             value="tab-3"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <BoxIcon
               className="-ms-0.5 me-1.5 opacity-60"
@@ -64,7 +64,7 @@ export default function MenuTabs() {
           </TabsTrigger>
           <TabsTrigger
             value="tab-4"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <UsersRoundIcon
               className="-ms-0.5 me-1.5 opacity-60"
@@ -75,7 +75,7 @@ export default function MenuTabs() {
           </TabsTrigger>
           <TabsTrigger
             value="tab-5"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <ChartLine
               className="-ms-0.5 me-1.5 opacity-60"
@@ -86,7 +86,7 @@ export default function MenuTabs() {
           </TabsTrigger>
           <TabsTrigger
             value="tab-6"
-            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-primary data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+            className="hover:bg-accent hover:text-foreground data-[state=active]:after:bg-red-500 data-[state=active]:hover:bg-accent relative after:absolute after:inset-x-0 after:bottom-0 after:-mb-1 after:h-0.5 data-[state=active]:bg-sidebar-border data-[state=active]:shadow-none"
           >
             <SettingsIcon
               className="-ms-0.5 me-1.5 opacity-60"
@@ -98,6 +98,8 @@ export default function MenuTabs() {
         </TabsList>
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
+
+
       <TabsContent value="tab-1">
       <div className="flex flex-col items-center justify-center py-8">
         <h1 className="text-2xl font-bold mb-2 flex items-center gap-2">
